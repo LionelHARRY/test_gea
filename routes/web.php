@@ -21,6 +21,4 @@ Route::get('/mecaniciens', 'MecanicienController@index')->name('mecaniciens.inde
 Route::get('/mecaniciens/{id}', 'MecanicienController@show')->name('mecaniciens.show');
 
 
-Roiute::get('/voitures', function(){
-    return view('voitures');s
-})
+Route::resource('/voitures', 'VoitureController')->only(['index', 'show']);
