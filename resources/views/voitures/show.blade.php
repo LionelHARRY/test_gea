@@ -28,6 +28,24 @@
     </div>
 </div>
 
+<div class="card text-white bg-secondary mb-3">
+    <div class="card-header">Mecaniciens</div>
+    <div class="card-body">
+
+      <form action="/voitures" method="post">
+        {{ csrf_field() }}
+        <select id="meca">
+          @foreach ($mecaniciens as  $mecanicien)
+              <option value="">{{$mecanicien->nom}}</option>
+          @endforeach
+          </select>
+        <button class="btn-default" type="submit" name="button">Valider</button>
+      </form>
+
+
+    </div>
+</div>
+
 
 
 

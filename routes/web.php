@@ -22,3 +22,8 @@ Route::get('/mecaniciens/{id}', 'MecanicienController@show')->name('mecaniciens.
 
 
 Route::resource('/voitures', 'VoitureController')->only(['index', 'show']);
+
+/*Route::post('/voitures', function(){
+  $voiture = new App\Voiture;
+  $voiture->mecanicien_id = request('meca');
+});*/

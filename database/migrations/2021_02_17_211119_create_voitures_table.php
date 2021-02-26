@@ -21,6 +21,7 @@ class CreateVoituresTable extends Migration
             $table->string('immat');
             $table->integer('client_id');
             $table->integer('mecanicien_id');
+
         });
     }
 
